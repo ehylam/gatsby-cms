@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import {Helmet} from "react-helmet"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -29,6 +30,11 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </header>
+  <Helmet>
+    <script>
+        {`YOUR_SCRIPT_HERE`}
+    </script>
+  </Helmet>
 )
 
 Header.propTypes = {
